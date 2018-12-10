@@ -1,6 +1,7 @@
-const num = require('./test');
-const sum = require('./test');
-const each = require('./test');
+const script = require('./script.js');
+const num = script.num;
+const sum = script.sum;
+const each = script.each;
 
 test('Yes', () => {
   expect(sum).toBeTruthy();
@@ -16,4 +17,8 @@ test('Yes', () => {
 
 test('Yes', () => {
   expect(each).toHaveLength(5);
+});
+
+test('Yes', () => {
+  expect(Array.isArray(each)).toBe(true);
 });
