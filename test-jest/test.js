@@ -3,7 +3,7 @@
 function sum(a, b) {
 	return a + b > 10;
 }
-sum(2,2)
+// sum(2,2)
 
 // Переменная num должна быть равна 5. Проверить на соответствие.
 
@@ -23,3 +23,10 @@ var myFunc = function(a){
 	return newArr;
 }
 // console.log(each(arrh, myFunc));
+
+module.exports = {
+	sum: sum(12, 2),
+	num: num,
+	each: each(arrh, myFunc)
+}
+
